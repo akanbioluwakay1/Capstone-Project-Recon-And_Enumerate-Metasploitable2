@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Sun Sep 13 15:14:19 2026 as: nmap -sn -oA syn-scan 192.168.174.128
+Nmap scan report for 192.168.174.128
+Host is up (0.00075s latency).
+MAC Address: 00:0C:29:D0:16:9C (VMware)
+# Nmap done at Sun Sep 13 15:14:19 2026 -- 1 IP address (1 host up) scanned in 0.65 seconds

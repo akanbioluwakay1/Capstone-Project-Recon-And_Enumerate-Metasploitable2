@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep 13 15:34:33 2026 as: nmap -p139,445 -&#45;script=smb-enum-shares -oA scans-smb-shares 192.168.174.128 -->
+<nmaprun scanner="nmap" args="nmap -p139,445 -&#45;script=smb-enum-shares -oA scans-smb-shares 192.168.174.128" start="1789328073" startstr="Sun Sep 13 15:34:33 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.174.128" addrtype="ipv4"/>
+<address addr="00:0C:29:D0:16:9C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789328074" endtime="1789328075"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.174.128" addrtype="ipv4"/>
+<address addr="00:0C:29:D0:16:9C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-enum-shares" output="&#xa;  account_used: &lt;blank&gt;&#xa;  \\192.168.174.128\ADMIN$: &#xa;    Type: STYPE_IPC&#xa;    Comment: IPC Service (metasploitable server (Samba 3.0.20-Debian))&#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\tmp&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\192.168.174.128\IPC$: &#xa;    Type: STYPE_IPC&#xa;    Comment: IPC Service (metasploitable server (Samba 3.0.20-Debian))&#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\tmp&#xa;    Anonymous access: READ/WRITE&#xa;  \\192.168.174.128\opt: &#xa;    Type: STYPE_DISKTREE&#xa;    Comment: &#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\tmp&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\192.168.174.128\print$: &#xa;    Type: STYPE_DISKTREE&#xa;    Comment: Printer Drivers&#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\var\lib\samba\printers&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\192.168.174.128\tmp: &#xa;    Type: STYPE_DISKTREE&#xa;    Comment: oh noes!&#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\tmp&#xa;    Anonymous access: READ/WRITE"><elem key="account_used">&lt;blank&gt;</elem>
+<table key="\\192.168.174.128\ADMIN$">
+<elem key="Type">STYPE_IPC</elem>
+<elem key="Comment">IPC Service (metasploitable server (Samba 3.0.20-Debian))</elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\tmp</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\192.168.174.128\IPC$">
+<elem key="Type">STYPE_IPC</elem>
+<elem key="Comment">IPC Service (metasploitable server (Samba 3.0.20-Debian))</elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\tmp</elem>
+<elem key="Anonymous access">READ/WRITE</elem>
+</table>
+<table key="\\192.168.174.128\opt">
+<elem key="Type">STYPE_DISKTREE</elem>
+<elem key="Comment"></elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\tmp</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\192.168.174.128\print$">
+<elem key="Type">STYPE_DISKTREE</elem>
+<elem key="Comment">Printer Drivers</elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\var\lib\samba\printers</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\192.168.174.128\tmp">
+<elem key="Type">STYPE_DISKTREE</elem>
+<elem key="Comment">oh noes!</elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\tmp</elem>
+<elem key="Anonymous access">READ/WRITE</elem>
+</table>
+</script></hostscript><times srtt="684" rttvar="2899" to="100000"/>
+</host>
+<runstats><finished time="1789328075" timestr="Sun Sep 13 15:34:35 2026" summary="Nmap done at Sun Sep 13 15:34:35 2026; 1 IP address (1 host up) scanned in 1.49 seconds" elapsed="1.49" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

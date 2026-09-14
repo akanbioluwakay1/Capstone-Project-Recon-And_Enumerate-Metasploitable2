@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep 13 15:38:11 2026 as: nmap -p80 -&#45;script=http-title,http-headers -oA scans-http-enumeratio 192.168.174.128 -->
+<nmaprun scanner="nmap" args="nmap -p80 -&#45;script=http-title,http-headers -oA scans-http-enumeratio 192.168.174.128" start="1789328291" startstr="Sun Sep 13 15:38:11 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.174.128" addrtype="ipv4"/>
+<address addr="00:0C:29:D0:16:9C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789328292" endtime="1789328292"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.174.128" addrtype="ipv4"/>
+<address addr="00:0C:29:D0:16:9C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Date: Sun, 13 Sep 2026 19:38:18 GMT&#xa;  Server: Apache/2.2.8 (Ubuntu) DAV/2&#xa;  X-Powered-By: PHP/5.2.4-2ubuntu5.10&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="Metasploitable2 - Linux"><elem key="title">Metasploitable2 - Linux</elem>
+</script></port>
+</ports>
+<times srtt="720" rttvar="3771" to="100000"/>
+</host>
+<runstats><finished time="1789328292" timestr="Sun Sep 13 15:38:12 2026" summary="Nmap done at Sun Sep 13 15:38:12 2026; 1 IP address (1 host up) scanned in 0.84 seconds" elapsed="0.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
