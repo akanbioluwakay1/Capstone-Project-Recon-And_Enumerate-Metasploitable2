@@ -8,7 +8,7 @@ The objective of the assessment was to identify the target host, enumerate expos
 
 The assessment was conducted from a **Parrot Security OS** virtual machine using **Nmap**.
 
-> **Target:** 192.168.174.128  
+> **Target:** 192.168.41.130  
 > **Target Platform:** Metasploitable 2  
 > **Assessment Type:** Network Reconnaissance & Service Enumeration  
 > **Tool:** Nmap  
@@ -39,8 +39,8 @@ The primary objectives were to:
 | Attacker/Assessment Machine | Parrot Security OS |
 | Target Machine | Metasploitable 2 |
 | Virtualization | VMware |
-| Target IP | `192.168.174.128` |
-| Network | `192.168.174.0/24` |
+| Target IP | `192.168.41.130` |
+| Network | `192.168.41.0/24` |
 | Primary Tool | Nmap |
 | Assessment Type | Authorized Lab Testing |
 
@@ -72,13 +72,13 @@ Remediation Recommendations
 1. Host Discovery
 The local network was examined to identify active systems.
 Example command:
-sudo nmap -sn 192.168.174.0/24
+sudo nmap -sn 192.168.41.0/24
 The discovery process identified multiple active VMware hosts, including the Metasploitable system.
 The target used for the detailed assessment was:
-192.168.174.128
+192.168.41.130
 2. Port and Service Enumeration
 A service/version detection scan was performed against the target.
-sudo nmap -sV 192.168.174.128
+sudo nmap -sV 192.168.41.130
 The scan successfully identified the target as an active host and returned a significant number of exposed services.
 The screenshots document the results of the enumeration process.
 📊 Key Findings
@@ -225,9 +225,9 @@ This finding demonstrates why exposed administrative or shell services should be
 The following command was used for service enumeration:
 sudo nmap -sV 192.168.174.128
 For additional information about the target operating system, the following can be used in the authorized lab:
-sudo nmap -O 192.168.174.128
+sudo nmap -O 192.168.41.130
 A more comprehensive authorized lab scan can be performed with:
-sudo nmap -sV -O 192.168.174.128
+sudo nmap -sV -O 192.168.41.130
 📸 Evidence
 Screenshots captured during the assessment demonstrate:
 Local interface configuration
@@ -306,7 +306,7 @@ This assessment was performed against an intentionally vulnerable system in a co
 All scanning and security testing should only be performed against systems for which explicit authorization has been obtained.
 Unauthorized scanning or exploitation of systems and networks may violate organizational policies and applicable laws.
 📌 Conclusion
-The Nmap assessment successfully identified 192.168.174.128 as an active Metasploitable 2 host and enumerated a large number of exposed network services.
+The Nmap assessment successfully identified 192.168.41.130 as an active Metasploitable 2 host and enumerated a large number of exposed network services.
 The results demonstrate how service enumeration can provide security professionals with an understanding of a system's attack surface before conducting deeper vulnerability assessment.
 The assessment also demonstrates the importance of:
 Reducing unnecessary exposed services
