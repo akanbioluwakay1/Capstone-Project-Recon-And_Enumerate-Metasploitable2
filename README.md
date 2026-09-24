@@ -36,7 +36,7 @@ The primary objectives were to:
 
 | Component | Configuration |
 |---|---|
-| Attacker/Assessment Machine | Parrot Security OS |
+| Attacker/Assessment Machine | Kali Linux |
 | Target Machine | Metasploitable 2 |
 | Virtualization | VMware |
 | Target IP | `192.168.41.130` |
